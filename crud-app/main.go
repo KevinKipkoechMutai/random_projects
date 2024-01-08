@@ -13,7 +13,7 @@ import (
 type Movie struct{
 	ID string `json:"id"`
 	Isbn string `json:"isbn"`
-	title string `json:"title"`
+	Title string `json:"title"`
 	Director *Director `json:"director"`
 }
 
@@ -81,9 +81,9 @@ func main()  {
 	r := mux.NewRouter()
 
 	movies = append(movies, 
-					Movie{ID: "1", Isbn: "438227", title: "Movie 1", 
+					Movie{ID: "1", Isbn: "438227", Title: "Movie 1", 
 					Director: &Director{Firstname: "John", Lastname: "Smith"}})
-	movies = append(movies, Movie{ID: "2", Isbn: "348278", title: "Movie 2",
+	movies = append(movies, Movie{ID: "2", Isbn: "348278", Title: "Movie 2",
 					Director: &Director{Firstname: "Jane", Lastname: "Smith"}})
 
 	r.HandleFunc("/movies", getMovies).Methods("GET")
