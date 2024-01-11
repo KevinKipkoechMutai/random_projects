@@ -2,7 +2,7 @@ package models
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/KevinKipkoechMutai/random_projects/book-management-store/pkg/config"
+	"github.com/KevinKipkoechMutai/random_projects/tree/main/book-management-store/pkg/config"
 )
 
 var db *gorm.DB

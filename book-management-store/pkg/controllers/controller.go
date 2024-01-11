@@ -6,8 +6,8 @@ import (
 	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
-	"github.com/KevinKipkoechMutai/random_projects/book-management-store/pkg/utils"
-	"github.com/KevinKipkoechMutai/random_projects/book-management-store/pkg/models"
+	"github.com/KevinKipkoechMutai/random_projects/tree/main/book-management-store/pkg/utils"
+	"github.com/KevinKipkoechMutai/random_projects/tree/main/book-management-store/pkg/models"
 )
 
 var NewBook models.Book
